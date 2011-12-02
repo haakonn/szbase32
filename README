@@ -1,0 +1,12 @@
+szbase32 is an implementation of the z-base-32 encoding in Scala.
+
+This is basically the standard RFC 4648 Base32 encoding but with a custom
+alphabet permutation to make the encodings easier to read and communicate,
+and also leaves out padding to make the code shorter.
+
+Background:
+
+https://tools.ietf.org/html/rfc4648
+http://philzimmermann.com/docs/human-oriented-base-32-encoding.txt
+
+Feel free to use this under the terms of the MIT license.
