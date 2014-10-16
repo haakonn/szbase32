@@ -13,7 +13,7 @@ object Main extends App {
   } else {
     val in = args slice(1, args.length) mkString " "
     println(args(0) match {
-      case "encode" => ZBase32.encode(in getBytes)
+      case "encode" => ZBase32.encode(in.getBytes)
       case "decode" => new String(ZBase32.decode(in), "UTF-8")
       case _ => usage
     })
